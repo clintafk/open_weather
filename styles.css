@@ -54,15 +54,16 @@ table {
 .weather_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	margin-top: 20px;
+    justify-content: space-between;
+	margin-top: 15px;
 }
 
 .weather-section {
 	display: flex;
-	align-items: first baseline;
 	justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    margin-top: 15px;
 }
 
 .city_searchbox {
@@ -70,24 +71,22 @@ table {
 	height: min-content;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .city_searchbox input {
-	color: #06283D;
+	color: black;
 	width: 80%;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 	padding-left: 32px;
-	
 }
 
 .city_searchbox input::placeholder {
 	font-size: 20px;
-	font-weight: 500;
-	color: #06283D;
-	text-transform: capitalize;
+	color: black;
+    opacity: 25%;
 }
 
 .city_searchbox button {
@@ -111,4 +110,18 @@ table {
 	border: 1px solid black;
 	border-radius: 15px;
 	outline: none;
+}
+
+.flex-body {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.weather-details {
+    text-align: left;
+    margin-left: 12rem;
+}
+.weather-details2 {
+    text-align:right;
+    margin-right: 12rem;
 }
