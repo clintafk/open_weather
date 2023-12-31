@@ -29,10 +29,15 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+} 
 body {
+	height: 100vh;
 	line-height: 1;
     font-family: 'Inter', sans-serif;
+	background-image: url(images/fog_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 ol, ul {
 	list-style: none;
@@ -64,14 +69,14 @@ table {
     align-items: stretch;
     align-content: space-between;
     margin-top: 15px;
+	color: white;
 }
 
 .city_searchbox {
-	width: 100%;
 	height: min-content;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
 
 .city_searchbox input {
@@ -119,9 +124,28 @@ table {
 
 .weather-details {
     text-align: left;
-    margin-left: 12rem;
+    margin-left: 5rem;
 }
+
+.weather-details h4 {
+
+}
+
 .weather-details2 {
     text-align:right;
-    margin-right: 12rem;
+    margin-right: 5rem;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.weather_section1 {
+	margin-bottom: 1rem;
+
+}
+
+.weather-section3 {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 2rem;
 }
