@@ -38,6 +38,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	transition: ease;
 }
 ol, ul {
 	list-style: none;
@@ -127,16 +128,15 @@ table {
     margin-left: 5rem;
 }
 
-.weather-details h4 {
-
-}
-
 .weather-details2 {
-    text-align:right;
-    margin-right: 5rem;
 	display: flex;
-	justify-content: flex-end;
 	flex-direction: column;
+	
+	/* justify-content: flex-start;
+	flex-direction: column;
+	margin-top: 2rem;
+    text-align: left; */
+    margin-right: 5rem;
 }
 
 .weather_section1 {
@@ -146,6 +146,48 @@ table {
 
 .weather-section3 {
 	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+	justify-content: flex-start;
+	flex-basis: 30%;
+	margin-top: 1rem;
+}
+
+
+/* .flex-item p {
+	font-size: 3rem;
+	font-weight: bold;
+} */
+.weather-details2 p {
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.weather-details2 h1 {
+	font-size: 1rem;
+	font-weight: lighter;
+}
+.weather-details2 span {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-right: 10px;
+}
+
+
+#main-weather-icon {
+	font-size: 5rem;
+}
+
+#main-weather-city {
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+
+#main-weather-temp {
+	font-size: 5rem;
+	font-weight: bolder;
+}
+
+#main-weather-type {
+	margin-bottom: 1rem;
+	font-size: 3rem;
+	font-weight: 600;
 }
