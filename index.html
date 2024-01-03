@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WeatherApp</title>
+    <title>OpenWeather</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -23,40 +23,37 @@
 
       <!-- Main weather -->
       <div class="weather-section">
-        <div class="flex-body weather-details">
-          <div class="weather_section1">
-            <span class="material-symbols-outlined">foggy</span>
-            <h4 id="weather_type">Fog</h4>
-            <p>Valencia City</p>
+          <div class="flex-body weather-details">
+          <div class="flex-item weather_section1">
+            <span id="main-weather-icon" class="material-symbols-outlined">foggy</span>
+            <h1 id="main-weather-type">Fog</h1>
+            <p id="main-weather-city">Valencia City</p>
           </div>
-          <div class="weather_section2">
-            <h1>28 °C</h1>
-            <p>Feels like 9°C. Overcast clouds. Moderate breeze</p>
+          <div class="flex-item weather_section2">
+            <h1 id="main-weather-temp">28 °C</h1>
+            <p id="main-weather-description">Feels like 9°C. Overcast clouds. Moderate breeze</p>
           </div>
         </div>
         <div class="flex-body weather-details2">
-          <div class="weather-section3">
-            <!-- humidity icon goes here -->
+          <div class="flex-item weather-section3">
             <span class="material-symbols-outlined">humidity_percentage</span>
             <div>
-              <h4>Humidity</h4>
-              <h2>77%</h2>
+              <h1>Humidity</h1>
+              <p id="main-weather-humidity">77%</p>
             </div>
           </div>
-          <div class="weather-section3">
-            <!-- humidity icon goes here -->
-            <span class="material-symbols-outlined">dew_point</span>
+          <div class="flex-item weather-section3">
+            <span class="material-symbols-outlined"> air </span>
             <div>
-              <h4>Dew point </h4>
-              <h2>6°C</h2>
+              <h1>Wind</h1>
+              <p id="main-weather-wind">6°C</p>
             </div>
           </div>
-          <div class="weather-section3">
-            <!-- humidity icon goes here -->
+          <div class="flex-item weather-section3">
             <span class="material-symbols-outlined">visibility</span>
             <div>
-              <h4>Visibility</h4>
-              <h2>10.0km</h2>
+              <h1>Visibility</h1>
+              <p id="main-weather-visibility">10.0km</p>
             </div>
           </div>
         </div>
