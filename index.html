@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <div class="container weather_container">
+    <div class="weather_container">
       <!-- Search form -->
       <div class="city_searchbox">
         <span class="material-symbols-outlined" id="location-icon">location_on</span>
@@ -22,44 +22,87 @@
       </div>
 
       <!-- Main weather -->
-      <div class="weather-section">
-          <div class="flex-body weather-details">
-          <div class="flex-item weather_section1">
-            <span id="main-weather-icon" class="material-symbols-outlined">foggy</span>
-            <h1 id="main-weather-type">Fog</h1>
-            <p id="main-weather-city">Valencia City</p>
+      <div class="container">
+        <div class="weather-details">
+          <div class="weather-section">
+            <span id="main-weather-icon" class="material-symbols-outlined"></span>
+            <h1 id="main-weather-type"></h1>
+            <p id="main-weather-city"></p>
           </div>
-          <div class="flex-item weather_section2">
-            <h1 id="main-weather-temp">28 °C</h1>
-            <p id="main-weather-description">Feels like 9°C. Overcast clouds. Moderate breeze</p>
+          <div class="weather-section">
+            <h1 id="main-weather-temp"></h1>
+            <p id="main-weather-description"></p>
           </div>
         </div>
-        <div class="flex-body weather-details2">
-          <div class="flex-item weather-section3">
+        <div class="weather-information">
+          <div class="weather-card-section">
+            <div class="weather-card">
+              <span class="material-symbols-outlined">humidity_percentage</span>
+              <div>
+                <h1>Humidity</h1>
+                <p id="main-weather-humidity"></p>
+              </div>
+            </div>
+            <div class="weather-card">
+              <span class="material-symbols-outlined"> air </span>
+              <div>
+                <h1>Wind</h1>
+                <p id="main-weather-wind"></p>
+              </div>
+            </div>
+          </div>
+          <div class="weather-card-section">
+            <div class="weather-card">
+              <span class="material-symbols-outlined"> readiness_score </span>
+              <div>
+                <h1>Pressure</h1>
+                <p id="main-weather-pressure"></p>
+              </div>
+            </div>
+            <div class="weather-card">
+              <span class="material-symbols-outlined"> visibility </span>
+              <div>
+                <h1>Visibility</h1>
+                <p id="main-weather-visibility"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="weather-information">
+        <div class="weather-card-section">
+          <div class="weather-card">
             <span class="material-symbols-outlined">humidity_percentage</span>
             <div>
               <h1>Humidity</h1>
-              <p id="main-weather-humidity">77%</p>
+              <p id="main-weather-humidity"></p>
             </div>
           </div>
-          <div class="flex-item weather-section3">
+          <div class="weather-card">
             <span class="material-symbols-outlined"> air </span>
             <div>
               <h1>Wind</h1>
-              <p id="main-weather-wind">6°C</p>
-            </div>
-          </div>
-          <div class="flex-item weather-section3">
-            <span class="material-symbols-outlined">visibility</span>
-            <div>
-              <h1>Visibility</h1>
-              <p id="main-weather-visibility">10.0km</p>
+              <p id="main-weather-wind"></p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="forecast-section">
-      </div>
+        <div class="weather-card-section">
+          <div class="weather-card">
+            <span class="material-symbols-outlined"> readiness_score </span>
+            <div>
+              <h1>Pressure</h1>
+              <p id="main-weather-pressure"></p>
+            </div>
+          </div>
+          <div class="weather-card">
+            <span class="material-symbols-outlined"> visibility </span>
+            <div>
+              <h1>Visibility</h1>
+              <p id="main-weather-visibility"></p>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div>
     <script src="app.js" crossorigin="anonymous"></script>
   </body>
