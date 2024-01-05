@@ -1,9 +1,3 @@
-// Using OpenWeather API
-
-const user = () => {
-    user.name = "Clint"
-} 
-
 const container = document.querySelector('.container');
 const search = document.querySelector('.city_searchbox button');
 const weatherBox1 = document.querySelector('.weather-details');
@@ -23,6 +17,9 @@ search.addEventListener('click', ()=> {
                 return;
             }
 
+            console.log(json.coord.lat);
+            console.log(json.coord.lon);
+
             const body = document.body;
             const weather_city = document.querySelector('#main-weather-city');
             const icon  = document.querySelector('#main-weather-icon');
@@ -32,6 +29,7 @@ search.addEventListener('click', ()=> {
             const humidity = document.querySelector('#main-weather-humidity');
             const wind = document.querySelector('#main-weather-wind');
             const visibility = document.querySelector('#main-weather-visibility');
+            const pressure = document.querySelector('#main-weather-pressure');
             
             switch (json.weather[0].main) {
                 case 'Clear':
@@ -69,7 +67,8 @@ search.addEventListener('click', ()=> {
             //description.innerHTML = `${json.weather[0].description}`;
             description.innerHTML = `Feels like ${parseInt(json.main.feels_like)}°C, ${json.weather[0].description}.`;
             humidity.innerHTML = `${json.main.humidity}%`;
-            wind.innerHTML = `${json.wind.speed}mph ${json.wind.deg}°`;
+            wind.innerHTML = `${json.wind.speed}mph`;
             visibility.innerHTML = `${parseInt(json.visibility)}km`;
+            pressure.innerHTML = `${json.main.pressure}hPa`;
         });
 });
