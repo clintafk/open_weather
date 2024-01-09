@@ -148,10 +148,18 @@ table {
 	margin-top: 1rem;
 }
 
-.weather-card {
+.weather-card-section {
 	background: rgba(255, 255, 255, .1);
 	backdrop-filter: blur(30px);
-	border-radius: 35px;
+	min-width: 350px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+.weather-card {
+	/* background: rgba(255, 255, 255, .1); */
+	/* backdrop-filter: blur(30px); */
+	/* border-radius: 35px; */
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -159,7 +167,6 @@ table {
 	font-weight: lighter;
 	min-width: 180px;
 	min-height: 50px;
-
 	margin-top: 15px;
 }
 
@@ -171,11 +178,11 @@ table {
 
 .weather-card h1 {
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .weather-card p {
-	font-size: 1.1rem;
+	font-size: 1rem;
 
 }
 
@@ -183,6 +190,10 @@ table {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+}
+
+.forecast {
+
 }
 
 /* ID'S */
@@ -214,3 +225,42 @@ table {
 	align-items: center;
 	flex-direction: column;
 }
+
+.forecast-container { 
+    display: grid;
+
+}
+
+.info-group {
+    border-radius: 35px;
+	background: rgba(255, 255, 255, .1);
+	backdrop-filter: blur(30px);
+	min-width: 350px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-group span {
+    font-size: 5rem;
+}
+
+
+.date {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+
+}
+
+.forecast-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
